@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Profile Header Section -->
+        <header class="profile-header">
+            <div class="profile-image">
+                <img src="self_img.jpg"
+                    alt="AK Shuvo">
+            </div>
+            <div class="profile-info">
+                <h1>AK Shuvo</h1>
+                <div class="designation">Senior Software Developer</div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+                </div>
+                <div class="profile-actions">
+                    <button class="btn primary">
+                        <i class="fas fa-edit"></i> Edit Profile
+                    </button>
+                    <button class="btn secondary">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <section class="main-content">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="overview">
+                    <i class="fas fa-user"></i> Overview
+                </button>
+                <button class="tab-btn" data-tab="projects">
+                    <i class="fas fa-code"></i> Projects
+                </button>
+                <button class="tab-btn" data-tab="experience">
+                    <i class="fas fa-briefcase"></i> Experience
+                </button>
+                <button class="tab-btn" data-tab="education">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Overview Tab Content -->
+                <div class="tab-pane active" id="overview">
+                    <div class="overview-panel">
+                        <h2>About Me</h2>
+                        <p>I'm a passionate Senior Software Developer with over 8 years of experience in building
+                            scalable web applications and services. My expertise spans across full-stack development
+                            with a focus on modern JavaScript frameworks and cloud architecture.</p>
+                        <p>I enjoy solving complex problems and creating user-friendly experiences that make a positive
+                            impact on people's lives. When I'm not coding, you can find me contributing to open-source
+                            projects, mentoring junior developers, or exploring the latest in tech.</p>
+
+                        <h3>Key Skills</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Tab Content -->
+                <div class="tab-pane" id="projects">
+                    <h2>My Projects</h2>
+                    <div class="project-card">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with real-time inventory management, payment processing, and
+                            analytics dashboard. Implemented with React, Node.js, and MongoDB.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Redux</span>
+                            <span>Stripe API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Healthcare Management System</h3>
+                        <p>A comprehensive healthcare management solution for clinics and hospitals. Features include
+                            appointment scheduling, patient records, billing, and reporting.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>Firebase</span>
+                            <span>Node.js</span>
+                            <span>Cloud Functions</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Real-time Collaboration Tool</h3>
+                        <p>A collaborative workspace platform allowing teams to work together in real-time. Includes
+                            document editing, chat, video conferencing, and task management.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>WebSockets</span>
+                            <span>GraphQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Tab Content -->
+                <div class="tab-pane" id="experience">
+                    <h2>Work Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - Present</div>
+                            <div class="timeline-content">
+                                <h3>Senior Software Developer</h3>
+                                <p>TechSolutions Inc.</p>
+                                <ul>
+                                    <li>Lead a team of 5 developers to deliver enterprise-grade web applications</li>
+                                    <li>Architect and implement microservices-based solutions using Node.js and Docker
+                                    </li>
+                                    <li>Mentor junior developers and conduct code reviews to ensure quality</li>
+                                    <li>Implement CI/CD pipelines using GitHub Actions and AWS</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2017 - 2020</div>
+                            <div class="timeline-content">
+                                <h3>Full Stack Developer</h3>
+                                <p>InnovateTech</p>
+                                <ul>
+                                    <li>Developed and maintained multiple client projects using React and Node.js</li>
+                                    <li>Implemented responsive web designs and optimized performance</li>
+                                    <li>Collaborated with UI/UX designers to create seamless user experiences</li>
+                                    <li>Integrated third-party APIs and services</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2015 - 2017</div>
+                            <div class="timeline-content">
+                                <h3>Frontend Developer</h3>
+                                <p>WebCreations Ltd.</p>
+                                <ul>
+                                    <li>Built interactive user interfaces using JavaScript and jQuery</li>
+                                    <li>Converted design mockups into responsive web pages</li>
+                                    <li>Optimized website performance and accessibility</li>
+                                    <li>Collaborated with backend developers to integrate APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Tab Content -->
+                <div class="tab-pane" id="education">
+                    <h2>Education</h2>
+                    <div class="education-card">
+                        <h3>Master of Science in Computer Science</h3>
+                        <p>University of Technology</p>
+                        <p>2013 - 2015</p>
+                        <p>Specialized in Software Engineering with focus on distributed systems and cloud computing.
+                        </p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p>National University</p>
+                        <p>2009 - 2013</p>
+                        <p>Graduated with First Class Honors. Participated in programming competitions and tech clubs.
+                        </p>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Certifications</h3>
+                        <p>AWS Certified Solutions Architect</p>
+                        <p>Google Cloud Professional Developer</p>
+                        <p>MongoDB Certified Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <h2>Stats & Achievements</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <i class="fas fa-code"></i>
+                    <h3>48</h3>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>8+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <h3>32</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-certificate"></i>
+                    <h3>12</h3>
+                    <p>Certificates</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Feed Section -->
+        <section class="activity-section">
+            <h2>Recent Activities</h2>
+            <div class="activity-feed">
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Started working on <strong>AI Recommendation Engine</strong> project</p>
+                        <div class="activity-time">2 days ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Fixed critical bug in <strong>User Authentication</strong> service</p>
+                        <div class="activity-time">5 days ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Completed <strong>E-Commerce Platform</strong> version 2.0 release</p>
+                        <div class="activity-time">1 week ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Commented on <strong>Docker Optimization</strong> proposal</p>
+                        <div class="activity-time">2 weeks ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Received <strong>Employee of the Month</strong> award</p>
+                        <div class="activity-time">3 weeks ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Completed <strong>Advanced AWS Architecture</strong> certification</p>
+                        <div class="activity-time">1 month ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Joined <strong>Cloud Computing</strong> community</p>
+                        <div class="activity-time">1 month ago</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="activity-content">
+                        <p>Created pull request for <strong>Authentication Service</strong></p>
+                        <div class="activity-time">2 months ago</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section class="settings-section">
+            <h2>Profile Settings</h2>
+            <form class="settings-form">
+                <div class="form-group">
+                    <label for="displayName">Display Name</label>
+                    <input type="text" id="displayName" placeholder="Enter your display name" value="AK Shuvo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email address"
+                        value="akshuvo163@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" rows="4"
+                        placeholder="Tell us about yourself">Senior Software Developer with expertise in React, Node.js, and cloud technologies. Passionate about building scalable applications and solving complex problems.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter your location" value="Dhaka, Bangladesh">
+                </div>
+                <div class="form-group">
+                    <label>Notification Settings</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="emailNotify" checked>
+                        <label for="emailNotify">Email Notifications</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="projectUpdates" checked>
+                        <label for="projectUpdates">Project Updates</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newMessages" checked>
+                        <label for="newMessages">New Messages</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="theme">Theme</label>
+                    <select id="theme">
+                        <option value="dark" selected>Dark Mode</option>
+                        <option value="light">Light Mode</option>
+                        <option value="system">System Default</option>
+                    </select>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn primary">
+                        <i class="fas fa-save"></i> Save Changes
+                    </button>
+                    <button type="reset" class="btn secondary">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons and panes
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Show corresponding tab pane
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
